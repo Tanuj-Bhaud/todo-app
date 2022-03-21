@@ -5,9 +5,9 @@ import TodoList from '../components/Todolist'
 
 const Home: NextPage = () => {
   return (
-    <div className=" flex min-h-screen flex-col items-center justify-center py-2 bg-gradient-to-r from-cyan-500 to-blue-500]">
+    <div className=" flex min-h-screen flex-col items-center justify-center py-2  bg-[#2abaf3]">
       <Head>
-        <title>Create Next App</title>
+        <title>Todo App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
      

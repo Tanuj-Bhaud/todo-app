@@ -24,13 +24,13 @@ const Todo = ({ todos, completeTodo, removeTodo, updateTodo }) => {
   return todos.map((todo, index) => (
     <div
       className={`  
-      ${todo.isComplete ? 'todo-row complete' : 'todo-row'}
-     m-1 mt-2 flex h-14 flex-row items-center justify-center rounded-md bg-[#00FFDD]
+      ${todo.isComplete ? 'hover:cursor-rounded line-through' : 'todo-row'}
+     m-1 mt-2 flex h-14 flex-row items-center justify-center rounded-md bg-[#2abaf3]
 `}
       key={index}
     >
       <div
-        className="purple-200 ml-2 w-full rounded-lg text-left text-base font-semibold text-white shadow-md transition duration-200 ease-in focus:outline-none  focus:ring-2 focus:ring-offset-2"
+        className="ml-2 w-full appearance-none rounded-lg text-left text-base font-semibold text-white  transition duration-200 ease-in focus:outline-none  focus:ring-2 focus:ring-offset-2"
         key={todo.id}
         onClick={() => completeTodo(todo.id)}
       >
